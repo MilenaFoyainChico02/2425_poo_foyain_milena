@@ -1,6 +1,6 @@
 import json
 
-# Clase Producto: Representa un producto individual en el inventario
+# representa un producto individual en el inventario
 class Producto:
     def __init__(self, producto_id, nombre, cantidad, precio):
         self.producto_id = producto_id
@@ -18,7 +18,7 @@ class Producto:
         self.precio = precio
 
 
-# Clase Inventario: Gestiona el inventario utilizando un diccionario
+# gestiona el inventario utilizando un diccionario
 class Inventario:
     def __init__(self):
         self.productos = {}
@@ -82,7 +82,7 @@ class Inventario:
             print("Error al leer el archivo, formato incorrecto.")
 
 
-# Interfaz de usuario: Menú interactivo para interactuar con el sistema
+# interfaz de usuario
 def menu():
     inventario = Inventario()
     inventario.cargar_desde_archivo('inventario.json')
